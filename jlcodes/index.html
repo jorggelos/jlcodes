@@ -198,6 +198,7 @@
             <div class="container px-5">
                 <div class="text-white-50 small">
                     <div class="mb-2">&copy; Todos os Direitos Reservados.</div>
+                    <div class="mb-2"> JL CODES</div>
                 </div>
             </div>
         </footer>
@@ -218,8 +219,9 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form action="https://api.staticforms.xyz/submit" method="POST" id="contactForm" class="card">
                             <!-- Name input-->
+                            <input type="hidden" name="accesKey" value="d7c61b4e-161e-440a-9a19-625c0c4825dc">
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Nome completo</label>
@@ -231,12 +233,6 @@
                                 <label for="email">Endereço de email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Um e-mail é necessário.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">E-mail não é válido.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Número de telefone</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">É necessário um número de telefone.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
@@ -251,9 +247,6 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Envio do formulário com sucesso!</div>
-Para ativar este formulário, inscreva-se em
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
